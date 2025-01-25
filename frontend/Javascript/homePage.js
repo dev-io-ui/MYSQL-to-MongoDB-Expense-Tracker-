@@ -80,7 +80,7 @@ async function getAllExpenses() {
 
     console.log(res.data);
     res.data.expenses.forEach((expenses) => {
-      const id = expenses.id;
+      const id = expenses._id;
       const date = expenses.date;
       const categoryValue = expenses.category;
       const descriptionValue = expenses.description;
@@ -146,7 +146,7 @@ async function paginationBtn(e) {
     );
     table.innerHTML = "";
     res.data.expenses.forEach((expenses) => {
-      const id = expenses.id;
+      const id = expenses._id;
       const date = expenses.date;
       const categoryValue = expenses.category;
       const descriptionValue = expenses.description;
@@ -228,8 +228,8 @@ async function editExpense(e) {
         "http://localhost:4000/expense/getAllExpenses"
       ,{ headers: { Authorization: token } });
       res.data.forEach((expense) => {
-        if (expense.id == id) {
-          console.log("Yeh id aayi hai res main: " + expense.id);
+        if (expense._id == id) {
+          console.log("Yeh id aayi hai res main: " + expense._id);
           categoryValue.textContent = expense.category;
           descriptionValue.value = expense.description;
           amountValue.value = expense.amount;
@@ -267,7 +267,7 @@ async function buyPremium(e) {
   console.log(res);
   var options = {
     key: res.data.key_id, // Enter the Key ID generated from the Dashboard
-    order_id: res.data.order.id, // For one time payment
+    order_id: res.data.order._id, // For one time payment
     // This handler function will handle the success payment
     handler: async function (response) {
       const res = await axios.post(
