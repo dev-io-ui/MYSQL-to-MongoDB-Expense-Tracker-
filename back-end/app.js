@@ -28,9 +28,9 @@ app.use(express.static(frontendPath));
 app.use(userRoute);
 app.use("/expense", expenseRoute);
 app.use("/purchase", purchaseMembershipRouter);
-// app.use("/premium", leaderboardRouter);
+app.use("/premium", leaderboardRouter);
 app.use("/password", resetPasswordRouter);
-// app.use("/reports", reportsRouter);
+app.use("/reports", reportsRouter);
 
 
 mongoose

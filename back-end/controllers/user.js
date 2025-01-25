@@ -12,7 +12,7 @@ const getAllUsers = async (req, res) => {
   try {
     const users = await User.find()
       .sort({ totalExpenses: -1 }) 
-      .select("name totalExpenses"); // Select only name and totalExpenses
+      .select("name totalExpenses"); 
     res.json(users);
   } catch (err) {
     console.error("Error fetching users:", err);
