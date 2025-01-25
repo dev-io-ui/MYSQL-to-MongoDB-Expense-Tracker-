@@ -27,7 +27,7 @@ app.use(express.static(frontendPath));
 //  using Routes
 app.use(userRoute);
 app.use("/expense", expenseRoute);
-// app.use("/purchase", purchaseMembershipRouter);
+app.use("/purchase", purchaseMembershipRouter);
 // app.use("/premium", leaderboardRouter);
 app.use("/password", resetPasswordRouter);
 // app.use("/reports", reportsRouter);

@@ -7,7 +7,6 @@ exports.addExpense = async (req, res, next) => {
     const { date, category, description, amount } = req.body;
 
     try {
-        // Start a session for transaction-like behavior (not a true transaction in MongoDB)
         const session = await mongoose.startSession();
         session.startTransaction();
 

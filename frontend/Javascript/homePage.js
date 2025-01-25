@@ -266,9 +266,9 @@ async function buyPremium(e) {
   );
   console.log(res);
   var options = {
-    key: res.data.key_id, // Enter the Key ID generated from the Dashboard
-    order_id: res.data.order._id, // For one time payment
-    // This handler function will handle the success payment
+    key: res.data.key_id, 
+    order_id: res.data.order.id, 
+    
     handler: async function (response) {
       const res = await axios.post(
         "http://localhost:4000/purchase/updateTransactionStatus",
