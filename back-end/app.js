@@ -29,7 +29,7 @@ app.use(userRoute);
 // app.use("/expense", expenseRoute);
 // app.use("/purchase", purchaseMembershipRouter);
 // app.use("/premium", leaderboardRouter);
-// app.use("/password", resetPasswordRouter);
+app.use("/password", resetPasswordRouter);
 // app.use("/reports", reportsRouter);
 
 
