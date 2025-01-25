@@ -1,0 +1,105 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: #eaf9ea; /* Light green background */
+  }
+  
+  /* Color palette:
+     #5a3d80 - Dark Purple
+     #7a56a8 - Purple
+     #a3d9a5 - Light Green
+     #eaf9ea - Very Light Green
+  */
+  
+  .editDelete {
+    float: right;
+    margin: 3px;
+    padding: 3px 10px;
+    background-color: #5a3d80; /* Dark purple */
+    border: none;
+    color: white;
+  }
+  .editDelete:hover {
+    background-color: #a3d9a5; /* Light green */
+    color: #5a3d80;
+    border-color: #5a3d80;
+  }
+  
+  #png {
+    margin-right: 10px;
+  }
+  
+  #form1 {
+    border-radius: 10px;
+    background-color: #7a56a8; /* Purple */
+    box-shadow: 4px 4px 9px #5a3d80; /* Dark Purple */
+    margin: 20px 193px;
+  }
+  
+  #table {
+    border-radius: 10px;
+    background-color: #eaf9ea; /* Very light green */
+    box-shadow: 4px 4px 9px #b8b8b8;
+  }
+  
+  #submitBtn {
+    width: 140px;
+    background-color: #5a3d80; /* Dark Purple */
+    border-color: #5a3d80;
+    color: white;
+  }
+  #submitBtn:hover {
+    background-color: #a3d9a5; /* Light Green */
+    color: #5a3d80;
+    border-color: #5a3d80;
+  }
+  
+  .topBtn {
+    background-color: white;
+    border-color: white;
+    color: #5a3d80;
+  }
+  .topBtn:hover {
+    background-color: #7a56a8; /* Purple */
+    color: white;
+    border-color: #7a56a8;
+  }
+  
+  #navigation {
+    background-color: #5a3d80; /* Dark Purple */
+  }
+  
+  #categoryBtn {
+    background-color: #7a56a8; /* Purple */
+    border-radius: 7px;
+    border: none;
+    color: white;
+  }
+  #categoryBtn:hover {
+    background-color: #a3d9a5; /* Light Green */
+    color: #5a3d80;
+  }
+  
+  #category {
+    width: 300px;
+  }
+  
+  .input-group-text {
+    background-color: #5a3d80; /* Dark Purple */
+    color: white;
+    border: none;
+  }
+  
+  #description {
+    width: 2000px;
+  }
+  
+  .trStyle {
+    background-color: transparent;
+  }
+  
+  #tableHead {
+    background-color: #7a56a8; /* Purple */
+    color: white;
+  }
+  
